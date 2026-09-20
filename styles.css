@@ -1,55 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 body {
-    font-family: 'Share Tech Mono', monospace;
-    background-color: #05050a;
-    /* Opcional: puedes añadir un patrón de rejilla o líneas de escaneo de fondo */
-    background-image: 
-        linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
-        linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
-    background-size: 100% 4px, 6px 100%;
-    color: #00ffcc;
+    font-family: Arial, sans-serif;
+    background-color: #111111; 
+    background-size: cover;
+    background-position: center;
+    color: #e0e0e0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
 }
 
 .login-container {
-    background: rgba(10, 10, 15, 0.85);
-    padding: 35px;
-    /* Efecto de esquinas cortadas futuristas */
-    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px));
-    border: 2px solid #ff007f;
-    box-shadow: 0 0 20px rgba(255, 0, 127, 0.4), inset 0 0 15px rgba(0, 255, 204, 0.1);
-    width: 340px;
-    position: relative;
-}
-
-/* Pequeño detalle estético estilo HUD en las esquinas */
-.login-container::before {
-    content: "SYS.AUTH // v4.0.2";
-    position: absolute;
-    top: 5px;
-    right: 20px;
-    font-size: 9px;
-    color: #00ffcc;
-    letter-spacing: 1px;
-    opacity: 0.6;
+    background: rgba(20, 20, 20, 0.9);
+    padding: 30px;
+    border-radius: 4px;
+    border: 2px solid #8b0000;
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.5); 
+    width: 320px;
 }
 
 h2 {
     text-align: center;
-    color: #ff007f;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 26px;
-    font-weight: 900;
-    letter-spacing: 3px;
+    color: #cc0000; 
+    font-family: 'Anton', sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 25px;
-    text-shadow: 0 0 8px rgba(255, 0, 127, 0.8), 0 0 20px rgba(255, 0, 127, 0.4);
+    text-shadow: 2px 2px 4px rgba(0,0,0, 0.8);
 }
 
 .input-group {
@@ -58,61 +39,53 @@ h2 {
 
 .input-group label {
     display: block;
-    margin-bottom: 8px;
-    color: #00ffcc;
-    font-size: 12px;
+    margin-bottom: 5px;
+    color: #999999;
+    font-size: 13px;
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 2px;
-    text-shadow: 0 0 5px rgba(0, 255, 204, 0.4);
+    letter-spacing: 1px;
 }
 
 .input-group input {
     width: 100%;
     padding: 12px;
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.6);
-    border: 1px solid #00ffcc;
+    background-color: #222222;
+    border: 1px solid #444444; 
     color: #ffffff;
-    border-radius: 0px; /* Bordes rectos para un look más terminal/industrial */
+    border-radius: 2px;
     font-size: 15px;
-    font-family: 'Share Tech Mono', monospace;
-    transition: all 0.3s ease;
-    box-shadow: inset 0 0 5px rgba(0, 255, 204, 0.2);
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .input-group input:focus {
     outline: none;
-    border-color: #ff007f;
-    background-color: rgba(20, 0, 20, 0.8);
-    box-shadow: 0 0 10px rgba(255, 0, 127, 0.8), inset 0 0 8px rgba(255, 0, 127, 0.4);
+    border-color: #cc0000; 
+    box-shadow: 0 0 8px rgba(204, 0, 0, 0.6);
 }
 
 .btn-submit {
     width: 100%;
     padding: 12px;
-    background-color: #ff007f;
-    color: #05050a;
+    background-color: #8b0000;
+    color: white;
     border: none;
-    border-radius: 0px;
-    font-size: 16px;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 700;
-    letter-spacing: 2px;
+    border-radius: 2px;
+    font-size: 18px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 0 0 15px rgba(255, 0, 127, 0.6);
-    position: relative;
+    transition: background-color 0.2s, transform 0.1s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
 }
 
 .btn-submit:hover {
-    background-color: #00ffcc;
-    color: #05050a;
-    box-shadow: 0 0 20px rgba(0, 255, 204, 0.8);
+    background-color: #cc0000; 
 }
 
 .btn-submit:active {
     transform: translateY(2px);
-    box-shadow: 0 0 5px rgba(0, 255, 204, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
