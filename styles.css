@@ -2,10 +2,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #111111; 
+    background-color: #5a3c3c; 
     background-size: cover;
     background-position: center;
-    color: #e0e0e0;
+    color: #c5d11f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@ h2 {
     text-align: center;
     color: #cc0000; 
     font-family: 'Anton', sans-serif;
-    font-size: 28px;
+    font-size: 32px;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 25px;
